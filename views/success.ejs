@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="linkshorter, linkshort, linkshrt, free, redirector, urlshortener, urlshrinker, url, secure">
+  <meta content="Linkshrt - Free Url Shortener!" property="og:title" />
+    <meta content="Fast, Secure, and Powerful Link Shortener for Free!" property="og:description" />
+  <meta content="#5D68F3" data-react-helmet="true" name="theme-color" />
+  <meta content='/media/logo.png' property="og:image" />
+  <link rel="shortcut icon" href="/media/logo.png" icon created by Freepik - Flaticon>
+  <title>Link Shrt - Yet Another Link Shortener</title>
+  <link href="success.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <h1>Link Shortener</h1>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+  
+  <p class="success" id="success" style="width: 220px; margin : auto;">
+    <a href="<%= link %>"><%= link %></a> 
+    <br>
+    <br>
+    <button type="submit" onclick="copytext()">Copy</button></a>
+  </p>
+<script>
+    
+  function copytext() {
+    var copyText =  '<%= link %>' 
+
+  
+
+
+
+  navigator.clipboard.writeText(copyText);
+
+
+  alert("copied to clipboard");
+}
+</script>
+
+</body>
+
+</html>
