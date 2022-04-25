@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="keywords" content="linkshorter, linkshort, linkshrt, free, redirector, urlshortener, urlshrinker, url, secure">
   <meta content="Linkshrt - Free Url Shortener!" property="og:title" />
@@ -29,27 +30,12 @@
    <br>
   
   <p class="success" id="success" style="width: 220px; margin : auto;">
-    <a id="copy" href="<%= link %>"><%= link %></a> 
+    URL:<a id="copy" href="<%= link %>"><%= link %></a> 
     <br>
     <br>
-    <button id="copybutton" type="submit" onclick="copytext('copy')" >Copy</button></a>
+   
   </p>
-<script>
-    
-  function copytext(id) {
-    var from = document.getElementById(id);
-        var range = document.createRange();
-        window.getSelection().removeAllRanges();
-        range.selectNode(from);
-        window.getSelection().addRange(range);
-        document.execCommand('copy');
-        window.getSelection().removeAllRanges();
-        alert("Link Copied to ClipBoard!")
 
-
-}
-
-</script>
 
 </body>
 

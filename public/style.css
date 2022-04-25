@@ -18,6 +18,17 @@ html, body {
    box-sizing: border-box;
    resize: vertical;
  }
+
+ input[type=url], select, textarea{
+  font-family: 'Courier New', monospace;
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
  button[type=submit] {
    font-family: 'Courier New', monospace;
      width: 100%;
