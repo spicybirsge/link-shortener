@@ -29,25 +29,26 @@
    <br>
   
   <p class="success" id="success" style="width: 220px; margin : auto;">
-    <a href="<%= link %>"><%= link %></a> 
+    <a id="copy" href="<%= link %>"><%= link %></a> 
     <br>
     <br>
-    <button type="submit" onclick="copytext()">Copy</button></a>
+    <button id="copybutton" type="submit" onclick="copytext('copy')" >Copy</button></a>
   </p>
 <script>
     
-  function copytext() {
-    var copyText =  '<%= link %>' 
+  function copytext(id) {
+    var from = document.getElementById(id);
+        var range = document.createRange();
+        window.getSelection().removeAllRanges();
+        range.selectNode(from);
+        window.getSelection().addRange(range);
+        document.execCommand('copy');
+        window.getSelection().removeAllRanges();
+        alert("Link Copied to ClipBoard!")
 
-  
 
-
-
-  navigator.clipboard.writeText(copyText);
-
-
-  alert("copied to clipboard");
 }
+
 </script>
 
 </body>
