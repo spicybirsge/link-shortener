@@ -1,6 +1,7 @@
 # link-shortener
 
 - yet another link shortener
+- URL: https://www.linkshrt.cf
 
 # Self hosting
 
