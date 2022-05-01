@@ -1,6 +1,6 @@
 # link-shortener
 
-[x] yet another link shortener
+[ x ] yet another link shortener
 
 # Self hosting
 
