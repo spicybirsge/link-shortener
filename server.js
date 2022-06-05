@@ -1,11 +1,9 @@
-//require('dotenv').config()
+require('dotenv').config()
 require('./mongo')()
 const express = require("express")
 const app = express()
 const logger = require('morgan');
-const helmet = require('helmet');
 app.set('view-engine', 'ejs')
-app.use(helmet());
 app.use(logger('dev'));
 const error = require('./middleware/error');
 app.use(express.urlencoded({ extended: false }))
