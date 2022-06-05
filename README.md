@@ -1,6 +1,6 @@
 # link-shortener
 
-- yet another link shortener, but you can't use this for phishing because it has scam link detection powered by [antiphish](https://anti-fish.bitflow.dev/)
+- yet another link shortener, but you can't use this for phishing because it has antiscam link powered by [antiphish](https://anti-fish.bitflow.dev/)
 
 - URL: https://www.linkshrt.cf
 
